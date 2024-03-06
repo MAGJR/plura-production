@@ -38,13 +38,13 @@ export const pricingCards = [
     priceId: '',
   },
   {
-    title: 'Unlimited Saas',
+    title: '',
     description: 'The ultimate agency kit',
     price: '$199',
     duration: 'month',
     highlight: 'Key features',
     features: ['Rebilling', '24/7 Support team'],
-    priceId: 'price_1OYxkqFj9oKEERu1KfJGWxgN',
+    priceId: 'price_1OqcEhKl6X3Z4BWzoZEJS3o7',
   },
   {
     title: 'Basic',
@@ -53,7 +53,7 @@ export const pricingCards = [
     duration: 'month',
     highlight: 'Everything in Starter, plus',
     features: ['Unlimited Sub accounts', 'Unlimited Team members'],
-    priceId: 'price_1OYxkqFj9oKEERu1NbKUxXxN',
+    priceId: 'price_1OqcEhKl6X3Z4BWzU05N550Q',
   },
 ]
 
