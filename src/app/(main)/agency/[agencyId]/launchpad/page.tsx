@@ -13,8 +13,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { stripe } from "@/lib/stripe";
-import AppstoreIcon from '@public/appstore.png';
-import Stripelogo from '@public/stripe.png';
 
 type Props = {
   params: {
@@ -81,7 +79,7 @@ const LaunchPadPage = async ({ params, searchParams }: Props) => {
             <div className="flex justify-between items-center w-full border p-4 rounded-lg gap-2">
               <div className="flex md:items-center gap-4 flex-col md:!flex-row">
                 <Image
-                  src={AppstoreIcon.src}
+                  src="./appstore.png"
                   alt="app logo"
                   height={80}
                   width={80}
@@ -94,7 +92,7 @@ const LaunchPadPage = async ({ params, searchParams }: Props) => {
             <div className="flex justify-between items-center w-full border p-4 rounded-lg gap-2">
               <div className="flex md:items-center gap-4 flex-col md:!flex-row">
                 <Image
-                  src={Stripelogo.src}
+                  src="/stripelogo.png"
                   alt="app logo"
                   height={80}
                   width={80}

@@ -71,7 +71,8 @@
     "uploadthing": "^6.1.0",
     "uuid": "^9.0.1",
     "vaul": "^0.8.0",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "autoprefixer": "^10.0.1"
   },
   "devDependencies": {
     "typescript": "^5",
