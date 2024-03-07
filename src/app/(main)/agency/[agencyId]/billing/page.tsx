@@ -25,7 +25,7 @@ const page = async ({ params }: Props) => {
     ids: addOnProducts.map((product) => product.id),
     expand: ['data.default_price'],
   })
-console.log(addOns)
+
   const agencySubscription = await db.agency.findUnique({
     where: {
       id: params.agencyId,
