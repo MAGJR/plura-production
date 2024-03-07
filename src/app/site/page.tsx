@@ -34,7 +34,7 @@ export default async function Home() {
         </div>
         <div className="flex justify-center items-center relative md:mt-[-70px]">
           <Image
-            src={'/assets/preview.png'}
+            src={'./assets/preview.png'}
             alt="banner image"
             height={800}
             width={800}
