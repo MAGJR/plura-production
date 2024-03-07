@@ -93,12 +93,12 @@ const MenuOptions = ({
       >
         <div>
           <AspectRatio ratio={16 / 5}>
-            <Image
+            {/* <Image
               src={sidebarLogo}
               alt="Sidebar Logo"
               fill
               className="rounded-md object-contain"
-            />
+            /> */}
           </AspectRatio>
           <Popover>
             <PopoverTrigger asChild>
@@ -139,12 +139,12 @@ const MenuOptions = ({
                               className="flex gap-4 w-full h-full"
                             >
                               <div className="relative w-16">
-                                <Image
+                                {/* <Image
                                   src={user?.Agency?.agencyLogo}
                                   alt="Agency Logo"
                                   fill
                                   className="rounded-md object-contain"
-                                />
+                                /> */}
                               </div>
                               <div className="flex flex-col flex-1">
                                 {user?.Agency?.name}
@@ -160,12 +160,12 @@ const MenuOptions = ({
                                 className="flex gap-4 w-full h-full"
                               >
                                 <div className="relative w-16">
-                                  <Image
+                                  {/* <Image
                                     src={user?.Agency?.agencyLogo}
                                     alt="Agency Logo"
                                     fill
                                     className="rounded-md object-contain"
-                                  />
+                                  /> */}
                                 </div>
                                 <div className="flex flex-col flex-1">
                                   {user?.Agency?.name}
@@ -189,12 +189,12 @@ const MenuOptions = ({
                                 className="flex gap-4 w-full h-full"
                               >
                                 <div className="relative w-16">
-                                  <Image
+                                  {/* <Image
                                     src={subaccount.subAccountLogo}
                                     alt="subaccount Logo"
                                     fill
                                     className="rounded-md object-contain"
-                                  />
+                                  /> */}
                                 </div>
                                 <div className="flex flex-col flex-1">
                                   {subaccount.name}
@@ -210,12 +210,12 @@ const MenuOptions = ({
                                   className="flex gap-4 w-full h-full"
                                 >
                                   <div className="relative w-16">
-                                    <Image
+                                    {/* <Image
                                       src={subaccount.subAccountLogo}
                                       alt="subaccount Logo"
                                       fill
                                       className="rounded-md object-contain"
-                                    />
+                                    /> */}
                                   </div>
                                   <div className="flex flex-col flex-1">
                                     {subaccount.name}

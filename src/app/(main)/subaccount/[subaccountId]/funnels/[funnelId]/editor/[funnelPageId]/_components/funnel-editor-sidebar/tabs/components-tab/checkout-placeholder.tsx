@@ -17,13 +17,13 @@ const CheckoutPlaceholder = (props: Props) => {
       onDragStart={(e) => handleDragStart(e, 'paymentForm')}
       className=" h-14 w-14 bg-muted rounded-lg flex items-center justify-center"
     >
-      <Image
+      {/* <Image
         src={"./stripelogo.png"}
         height={40}
         width={40}
         alt="stripe logo"
         className="object-cover"
-      />
+      /> */}
     </div>
   )
 }

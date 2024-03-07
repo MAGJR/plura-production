@@ -59,12 +59,12 @@ const AllSubaccountsPage = async ({ params }: Props) => {
                       className="flex gap-4 w-full h-full"
                     >
                       <div className="relative w-32">
-                        <Image
+                        {/* <Image
                           src={subaccount.subAccountLogo}
                           alt="subaccount logo"
                           fill
                           className="rounded-md object-contain bg-muted/50 p-4"
-                        />
+                        /> */}
                       </div>
                       <div className="flex flex-col justify-between">
                         <div className="flex flex-col">

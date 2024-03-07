@@ -103,12 +103,12 @@ const FunnelProductsTable: React.FC<FunnelProductsTableProps> = ({
                 />
               </TableCell>
               <TableCell>
-                <Image
+                {/* <Image
                   alt="product Image"
                   height={60}
                   width={60}
                   src={product.images[0]}
-                />
+                /> */}
               </TableCell>
               <TableCell>{product.name}</TableCell>
               <TableCell>
