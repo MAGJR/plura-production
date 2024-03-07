@@ -18,10 +18,11 @@ export default authMiddleware({
     }`
 
     //if subdomain exists
-    const customSubDomain = hostname
-      .get('host')
-      ?.split(`${process.env.NEXT_PUBLIC_DOMAIN}`)
-      .filter(Boolean)[0]
+    const customSubDomain = null;
+   // hostname
+   //  .get('host')
+   //  ?.split(`${process.env.NEXT_PUBLIC_DOMAIN}`)
+   //  .filter(Boolean)[0]
 
     if (customSubDomain) {
       return NextResponse.rewrite(
