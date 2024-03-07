@@ -2,6 +2,7 @@ import { EditorBtns } from '@/lib/constants'
 import { Youtube } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
+import SripteLogo from '@public/stripelogo.png';
 
 type Props = {}
 
@@ -17,7 +18,7 @@ const CheckoutPlaceholder = (props: Props) => {
       className=" h-14 w-14 bg-muted rounded-lg flex items-center justify-center"
     >
       <Image
-        src="/stripelogo.png"
+        src={SripteLogo.src}
         height={40}
         width={40}
         alt="stripe logo"
