@@ -10,7 +10,7 @@ import { pricingCards } from '@/lib/constants'
 import { stripe } from '@/lib/stripe'
 import clsx from 'clsx'
 import { Check } from 'lucide-react'
-import ImgHome from '../../../public/assets/preview.png'
+import ImgHome from '../../../public/assets/home.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 
