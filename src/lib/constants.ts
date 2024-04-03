@@ -27,10 +27,11 @@ import Tune from '@/components/icons/tune'
 import Video from '@/components/icons/video_recorder'
 import Wallet from '@/components/icons/wallet'
 import Warning from '@/components/icons/warning'
+
 export const pricingCards = [
   {
     title: 'Starter',
-    description: 'Perfect for trying out plura',
+    description: 'Perfect for trying out Owner',
     price: 'Free',
     duration: '',
     highlight: 'Key features',
@@ -38,12 +39,12 @@ export const pricingCards = [
     priceId: '',
   },
   {
-    title: '',
+    title: 'Unlimited SaaS',
     description: 'The ultimate agency kit',
     price: '$199',
     duration: 'month',
     highlight: 'Key features',
-    features: ['Rebilling', '24/7 Support team'],
+    features: ['Rebilling', '24/7 Support team','Unlimited Sub accounts', 'Unlimited Team members'],
     priceId: 'price_1OqcEhKl6X3Z4BWzoZEJS3o7',
   },
   {

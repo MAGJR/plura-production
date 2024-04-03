@@ -10,6 +10,7 @@ import { pricingCards } from '@/lib/constants'
 import { stripe } from '@/lib/stripe'
 import clsx from 'clsx'
 import { Check } from 'lucide-react'
+import ImgHome from '../../../public/assets/preview.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -33,13 +34,13 @@ export default async function Home() {
           </h1>
         </div>
         <div className="flex justify-center items-center relative md:mt-[-70px]">
-          {/* <Image
-            src={'./assets/preview.png'}
+          <Image
+            src={ImgHome}
             alt="banner image"
             height={800}
             width={800}
             className="rounded-tl-2xl rounded-tr-2xl border-2 border-muted"
-          /> */}
+          /> 
           <div className="bottom-0 top-[50%] bg-gradient-to-t dark:from-background left-0 right-0 absolute z-10"></div>
         </div>
       </section>
@@ -56,13 +57,13 @@ export default async function Home() {
             <Card
               key={card.nickname}
               className={clsx('w-[300px] flex flex-col justify-between', {
-                'border-2 border-red': card.nickname === 'Unlimited Saas',
+                'border-2 border-primary': card.nickname === 'Basic',
               })}
             >
               <CardHeader>
                 <CardTitle
                   className={clsx('', {
-                    'text-muted-foreground': card.nickname !== 'Unlimited Saas',
+                    'text-muted-foreground': card.nickname !== 'Basic',
                   })}
                 >
                   {card.nickname}
@@ -70,13 +71,15 @@ export default async function Home() {
                 <CardDescription>
                   {
                      pricingCards.find((c) => c.title === card.nickname)?.description ||
-          'No description available' // Esta é a linha adicionada
+                     'No description available' // Esta é a linha adicionada
                   }
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <span className="text-4xl font-bold">
-                  {card.unit_amount && card.unit_amount / 100}
+                  {/* PRICE default from Stripe {card.unit_amount && card.unit_amount / 100}*/}
+                {card.unit_amount ? `$${card.unit_amount / 100}` : pricingCards.find((c) => c.priceId === card.id)?.price}
+                
                 </span>
                 <span className="text-muted-foreground">
                   <span>/ {card.recurring?.interval}</span>
@@ -102,7 +105,7 @@ export default async function Home() {
                     'w-full text-center bg-primary p-2 rounded-md',
                     {
                       '!bg-muted-foreground':
-                        card.nickname !== 'Unlimited Saas',
+                        card.nickname !== 'Basic',
                     }
                   )}
                 >
